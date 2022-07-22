@@ -8,13 +8,13 @@ If you want to run locally, you can use the following command to run locally on 
 Clone the project
 
 ```
-  git clone https://github.com/dapoadedire/cms-team.git
+  git clone https://github.com/dapoadedire/cms-temp.git
 ```
 
 Go to the project directory
 
 ```
-  cd cms-team
+  cd cms-temp
 ```
 
 Create a Virtual Environment 
