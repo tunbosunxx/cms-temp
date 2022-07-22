@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Home</title> {% endblock title %}
+
+{% block content %}
+
+
+{% if user.is_authenticated %}
+
+<h2>Hi {{ user.username }}!</a></h2>
+<p><a href="{% url 'logout' %}">Sign Out</a></p>
+<p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+<p><a href="{% url 'password_change' %}">Change Password</a></p>
+
+{% else %}
+
+<p><a href="#">You are not logged in!</a></p>
+<p> <a href="{% url 'login' %}">Sign In</a></p>
+<p> <a href="{% url 'signup' %}">Sign Up</a></p>
+
+
+{% endif %}
+
+{% load static %}
+<img src="{% static 'images/test_image.png' %}" alt="Test Image"/>
+
+
+{% endblock content %}

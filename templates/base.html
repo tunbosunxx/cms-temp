@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <script src="{% static 'javascript/script.js' %}"></script>
+        {% block title %}
+           <title>CMS</title>
+        {% endblock title %}
+    </head>
+    
+    <body>
+        <header>
+            <h3>CMS Header</h3>
+        </header>
+        <section>
+            {% block content %}
+            {% endblock content %}
+        </section>
+        <footer>
+            <h3>CMS Footer</h3>
+        </footer>
+</html>
