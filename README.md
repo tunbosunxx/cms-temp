@@ -34,3 +34,5 @@ Finally, Start The Server.
 ```
 python manage.py runserver
 ```
+
+USE test123 as username and password
